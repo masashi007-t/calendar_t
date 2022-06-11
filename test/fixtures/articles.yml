@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  month: 1
+  day: 1
+  youbi: MyString
+  plan: MyString
+  tomi: MyString
+  yama: MyString
+  oga: MyString
+  sige: MyString
+  kuro: MyString
+  jyog: MyString
+  nisi: MyString
+  hara: MyString
+  body: MyText
+
+two:
+  month: 1
+  day: 1
+  youbi: MyString
+  plan: MyString
+  tomi: MyString
+  yama: MyString
+  oga: MyString
+  sige: MyString
+  kuro: MyString
+  jyog: MyString
+  nisi: MyString
+  hara: MyString
+  body: MyText

@@ -1,0 +1,110 @@
+<%= form_with model: article do |form| %>
+  <div>
+    <%= form.label :月　 %>
+    <%= form.number_field :month %>
+    <% article.errors.full_messages_for(:month).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :日　 %>
+    <%= form.number_field :day %>
+    <% article.errors.full_messages_for(:day).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :曜日 %>
+    <%= form.text_field :youbi %><br><br>
+    <% article.errors.full_messages_for(:youbi).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :主な行事 %>
+    <%= form.text_field :plan %>
+    <% article.errors.full_messages_for(:plan).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :冨永　 %>
+    <%= form.text_field :tomi %>
+    <% article.errors.full_messages_for(:tomi).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :山口　 %>
+    <%= form.text_field :yama %><br><br>
+    <% article.errors.full_messages_for(:yama).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :大賀　 %>
+    <%= form.text_field :oga %>
+    <% article.errors.full_messages_for(:oga).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+<div>
+    <%= form.label :重永　 %>
+    <%= form.text_field :sige %>
+    <% article.errors.full_messages_for(:sige).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+    </div>
+
+ <div>
+    <%= form.label :黒木　 %>
+    <%= form.text_field :kuro %>
+    <% @article.errors.full_messages_for(:kuro).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :城後　 %>
+    <%= form.text_field :jyog %><br><br>
+    <% @article.errors.full_messages_for(:jyog).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+ <div>
+    <%= form.label :西村　 %>
+    <%= form.text_field :nisi %>
+    <% @article.errors.full_messages_for(:nisi).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :原田　 %>
+    <%= form.text_field :hara %><br><br>
+    <% @article.errors.full_messages_for(:hara).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :その他連絡事項 %><br>
+    <%= form.text_area :body, class: "form-control" %><br>
+    <% @article.errors.full_messages_for(:body).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+   
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %> 

@@ -1,0 +1,22 @@
+<div  class = "container">
+<h1><%= @article.month %></h1>
+<h1><%= @article.day %></h1>
+<p><%= @article.youbi %></p>
+<p><%= @article.plan %></p>
+<p><%= @article.tomi %></p>
+<p><%= @article.yama %></p>
+<p><%= @article.oga %></p>
+<p><%= @article.sige %></p>
+<p><%= @article.kuro %></p>
+<p><%= @article.jyog %></p>
+<p><%= @article.nisi %></p>
+<p><%= @article.hara %></p>
+<p><%= @article.body %></p>
+</div>
+<ul>
+  <li><%= link_to "編集に戻る", edit_article_path(@article) %></li>
+  <li><%= link_to "Destroy", article_path(@article), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

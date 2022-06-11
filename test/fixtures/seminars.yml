@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  month: 1
+  day: 1
+  youbi: MyString
+  title1: MyString
+  title2: MyString
+  title3: MyString
+  title4: MyString
+  name11: MyString
+  name12: MyString
+  name13: MyString
+  name14: MyString
+  name15: MyString
+  name21: MyString
+  name22: MyString
+  name23: MyString
+  name24: MyString
+  name25: MyString
+  name31: MyString
+  name32: MyString
+  name33: MyString
+  name34: MyString
+  name35: MyString
+  name41: MyString
+  name42: MyString
+  name43: MyString
+  name44: MyString
+  name45: MyString
+
+two:
+  month: 1
+  day: 1
+  youbi: MyString
+  title1: MyString
+  title2: MyString
+  title3: MyString
+  title4: MyString
+  name11: MyString
+  name12: MyString
+  name13: MyString
+  name14: MyString
+  name15: MyString
+  name21: MyString
+  name22: MyString
+  name23: MyString
+  name24: MyString
+  name25: MyString
+  name31: MyString
+  name32: MyString
+  name33: MyString
+  name34: MyString
+  name35: MyString
+  name41: MyString
+  name42: MyString
+  name43: MyString
+  name44: MyString
+  name45: MyString

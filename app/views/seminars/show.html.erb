@@ -1,0 +1,31 @@
+
+<h1><%= @seminar.month %></h1>
+<h1><%= @seminar.day %></h1>
+<h1><%= @seminar.youbi %></h1>
+<%= "　　　　　" %><%= @seminar.title1 %> <%= "　　　" %><%= @seminar.title2 %><%= "　　　" %> 
+<%= @seminar.title3 %> <%= "　　　" %><%= @seminar.title4  %> <br>
+
+<%= "　　　　　　　" %><%= @seminar.name11 %> <%= "　　　　　" %><%= @seminar.name21 %>
+<%= "　　　　　　　" %><%= @seminar.name31 %> <%= "　　　　　" %><%= @seminar.name41  %> <br>
+
+<%= "　　　　　　　" %><%= @seminar.name12 %> <%= "　　　　　" %><%= @seminar.name22 %>
+<%= "　　　　　　　" %><%= @seminar.name32 %> <%= "　　　　　" %><%= @seminar.name42  %> <br>
+
+<%= "　　　　　　　" %><%= @seminar.name13 %> <%= "　　　　　" %><%= @seminar.name23 %>
+<%= "　　　　　　　" %><%= @seminar.name33 %> <%= "　　　　　" %><%= @seminar.name43  %> <br>
+
+<%= "　　　　　　　" %><%= @seminar.name14 %> <%= "　　　　　" %><%= @seminar.name24 %>
+<%= "　　　　　　　" %><%= @seminar.name34 %> <%= "　　　　　" %><%= @seminar.name44  %> <br>
+
+<%= "　　　　　　　" %><%= @seminar.name15 %> <%= "　　　　　" %><%= @seminar.name25 %>
+<%= "　　　　　　　" %><%= @seminar.name35 %> <%= "　　　　　" %><%= @seminar.name45  %>
+
+
+
+<ul>
+  <li><%= link_to "Edit", edit_seminar_path(@seminar) %></li>
+  <li><%= link_to "Destroy", seminar_path(@seminar), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

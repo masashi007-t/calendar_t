@@ -1,0 +1,42 @@
+<%= form_with model: @seminar do |form| %>
+    <div>  <%= form.label :月　 %> <%= form.number_field :month %>
+           <% @seminar.errors.full_messages_for(:month).each do |message| %>
+           <div><%= message %></div> <% end %></div>
+    <div>  <%= form.label :日　 %> <%= form.number_field :day %>   
+           <% @seminar.errors.full_messages_for(:day).each do |message| %>
+           <div><%= message %></div> <% end %></div>
+    <div>  <%= form.label :曜日 %> <%= form.text_field :youbi %> <br><br>  
+           <% @seminar.errors.full_messages_for(:youbi).each do |message| %>
+           <div><%= message %></div> <% end %></div>
+    <div>  <%= form.label :研修１ %> <%= form.text_field :title1 %> </div>
+    <div>  <%= form.label :名前１ %> <%= form.text_field :name11 %> </div>
+    <div>  <%= form.label :名前２ %> <%= form.text_field :name12 %> </div>
+    <div>  <%= form.label :名前３ %> <%= form.text_field :name13 %> </div>
+    <div>  <%= form.label :名前４ %> <%= form.text_field :name14 %> </div>
+    <div>  <%= form.label :名前５ %> <%= form.text_field :name15 %> <br><br> </div>
+  
+    <div>  <%= form.label :研修２ %> <%= form.text_field :title2 %> </div>
+    <div>  <%= form.label :名前１ %> <%= form.text_field :name21 %> </div>
+    <div>  <%= form.label :名前２ %> <%= form.text_field :name22 %> </div>
+    <div>  <%= form.label :名前３ %> <%= form.text_field :name23 %> </div>
+    <div>  <%= form.label :名前４ %> <%= form.text_field :name24 %> </div>
+    <div>  <%= form.label :名前５ %> <%= form.text_field :name25 %> <br><br> </div>
+  
+    <div>  <%= form.label :研修３ %> <%= form.text_field :title3 %> </div>
+    <div>  <%= form.label :名前１ %> <%= form.text_field :name31 %> </div>
+    <div>  <%= form.label :名前２ %> <%= form.text_field :name32 %> </div>
+    <div>  <%= form.label :名前３ %> <%= form.text_field :name33 %> </div>
+    <div>  <%= form.label :名前４ %> <%= form.text_field :name34 %> </div>
+    <div>  <%= form.label :名前５ %> <%= form.text_field :name35 %> <br><br> </div>
+  
+    <div>  <%= form.label :研修４ %> <%= form.text_field :title4 %> </div>
+    <div>  <%= form.label :名前１ %> <%= form.text_field :name41 %> </div>
+    <div>  <%= form.label :名前２ %> <%= form.text_field :name42 %> </div>
+    <div>  <%= form.label :名前３ %> <%= form.text_field :name43 %> </div>
+    <div>  <%= form.label :名前４ %> <%= form.text_field :name44 %> </div>
+    <div>  <%= form.label :名前５ %> <%= form.text_field :name45 %> <br></div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %> 

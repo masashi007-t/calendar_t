@@ -1,0 +1,49 @@
+<header></header>
+<main>  <section>  <table>
+      <% i = 5 %>
+     <% @seminars.each do |seminar| %>
+
+        <% if i > 4 %>
+                <tr>
+                <th class="tr1"><%="月　" %> </th> <th class="tr1"><%="日　" %> </th><td class="tr1"><%="曜日"%></td>
+                <td class="tr1"><%="研修１"%>  </td> <td class="tr1"><%="研修２"%></td>   <td class="tr1"><%="研修３"%></td>
+                <td class="tr1"><%="研修４"%></td>
+                </tr>  <% i = 0 %>
+        <% end %>
+
+        <tr>
+          <th class="tr3"><%=  seminar.month %> </th><th class="tr3"><%=  seminar.day %></th><th class="tr3"><%=  seminar.youbi %></th>
+	        <td class="tr2"><%=  seminar.title1 %></td><td class="tr2"><%=  seminar.title2 %></td>
+          <td class="tr2"><%=  seminar.title3 %></td><td class="tr2"><%=  seminar.title4 %></td>
+          <td class="tr2"><%= link_to "編集", edit_seminar_path(seminar) %></td>
+        </tr>
+        <tr>
+          <th ><%= "　" %> </th> <th ><%= "　" %> </th> <th class="tr3"><%= "１" %> </th> 
+          <td class="tr2"><%=  seminar.name11 %></td> <td class="tr2"><%= seminar.name21 %></td>
+          <td class="tr2"><%=  seminar.name31 %></td> <td class="tr2"><%= seminar.name41 %></td>
+        </tr>
+        <tr>
+          <th ><%= "　" %> </th> <th ><%= "　" %> </th> <th class="tr3"><%= "２" %> </th>
+          <td class="tr2"><%=  seminar.name12 %></td> <td class="tr2"><%= seminar.name22 %></td>
+          <td class="tr2"><%=  seminar.name32 %></td> <td class="tr2"><%= seminar.name42 %></td>
+        </tr>
+        <tr>
+          <th ><%= "　" %> </th> <th ><%= "　" %> </th> <th class="tr3"><%= "３" %> </th>
+          <td class="tr2"><%=  seminar.name13 %></td> <td class="tr2"><%= seminar.name23 %></td>
+          <td class="tr2"><%=  seminar.name33 %></td> <td class="tr2"><%= seminar.name43 %></td>
+        </tr>
+          <th ><%= "　" %> </th> <th ><%= "　" %> </th> <th class="tr3"><%= "４" %> </th>
+          <td class="tr2"><%=  seminar.name14 %></td> <td class="tr2"><%= seminar.name24 %></td>
+          <td class="tr2"><%=  seminar.name34 %></td> <td class="tr2"><%= seminar.name44 %></td>
+        </tr>
+        <tr>
+          <th ><%= "　" %> </th> <th ><%= "　" %> </th> <th class="tr3"><%= "５" %> </th> 
+          <td class="tr2"><%=  seminar.name15 %></td> <td class="tr2"><%= seminar.name25 %></td>
+          <td class="tr2"><%=  seminar.name35 %></td> <td class="tr2"><%= seminar.name45 %></td>
+        </tr>
+          
+        <% i = i + 1 %>   
+     <% end %>
+</table>  </section>  </main>
+
+<%= link_to "新規作成", new_seminar_path %>

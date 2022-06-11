@@ -1,0 +1,27 @@
+<header></header>
+<main>  <section>  <table>
+      <% i=0 %>
+      <% @articles.each do |article| %>
+
+        <% if i != article.month %>
+                <tr>
+                <th class="tr1"><%="月　" %> </th> <th class="tr1"><%="日　" %> </th><td class="tr1"><%="曜日"%></td>
+                <td class="tr1"><%="主な行事"%>  </td> <td class="tr1"><%="冨永　　　"%></td>   <td class="tr1"><%="山口　　　"%></td>
+                <td class="tr1"><%="大賀　　　"%></td> <td class="tr1"><%="重永　　　"%></td> <td class="tr1"><%="黒木　　　"%></td>
+                <td class="tr1"><%="城後　　　"%></td> <td class="tr1"><%="西村　　　"%></td> <td class="tr1"><%="原田　　　"%></td>
+		<td class="tr1"><%="その他の連絡事項等　　"%></td> <td class="tr1"><%= "　　" %></td>
+                </tr>
+        <% end %>
+
+        <tr>
+          <th class="tr3"><%=  article.month %> </th><th class="tr3"><%=  article.day %></th><td class="tr2"><%=  article.youbi %></td>
+	  <td class="tr2"><%=  article.plan %></td>
+          <td class="tr2"><%=  article.tomi %></td> <td class="tr2"><%=  article.yama %></td> <td class="tr2"><%=  article.oga %></td>
+          <td class="tr2"><%=  article.sige %></td><td class="tr2"><%=  article.kuro %></td> <td class="tr2"><%=  article.jyog %></td>
+          <td class="tr2"><%=  article.nisi %></td> <td class="tr2"><%=  article.hara %></td> <td class="tr2"><%= article.body %></td> 
+           <td class="tr2"><%= link_to "編集", edit_article_path(article) %></td>
+        </tr> <% i = article.month %>   
+      <% end %>
+</table>  </section>  </main>
+
+<%= link_to "新規作成", new_article_path %>
